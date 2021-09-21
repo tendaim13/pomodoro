@@ -2,9 +2,12 @@ import  {CircularProgressbar, buildStyles} from 'react-circular-progressbar';
 import PauseButton from './PauseButton';
 import PlayButton from './PlayButton';
 import SettingsButton from './SettingsButton';
+import {useContext, useState} from 'react';
+import SettingsContext from './SettingsContext';
 
 function Timer() { 
     const progress = 25;
+    const settingsInfo = useContext(SettingsContext);
 
     return(
         <div>
@@ -18,7 +21,7 @@ function Timer() {
             </div> 
 
             <div style={{marginTop:'20px'}}>
-                <SettingsButton/>
+                <SettingsButton onClick={()=> settingsInfo.setShowSettings(true)} />
             </div>
        
         </div>

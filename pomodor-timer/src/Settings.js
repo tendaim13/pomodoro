@@ -28,7 +28,7 @@ function Settings(){
             min={1}
             max={60}/>
             <div style={{textAlign:'center', marginTop:'20px'}}>
-                <BackButton/>
+                <BackButton onClick={()=> settingsInfo.setShowSettings(false)}/>
             </div>
            
         </div>
