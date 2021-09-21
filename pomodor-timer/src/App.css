@@ -1,6 +1,7 @@
 body{
   background-color: #38384b;
   color: #eee;
+  text-align:  center;
 
 }
 
@@ -10,4 +11,38 @@ main{
   margin: 0 auto;
   text-align: center;
 
+}
+
+div{
+  text-align: center;
+}
+
+button{
+  background-color: transparent;
+  color: rgba(255,255,255,0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+}
+
+button.settings{
+  width: auto;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.settings svg{
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
 }
