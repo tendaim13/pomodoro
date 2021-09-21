@@ -8,6 +8,7 @@ import SettingsContext from './SettingsContext';
 function Timer() { 
     const progress = 25;
     const settingsInfo = useContext(SettingsContext);
+    const [isPaused, setPaused] = useState(true);
 
     return(
         <div>
